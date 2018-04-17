@@ -9,7 +9,7 @@ def readexcel():
             path = input("Waar staat je bestand? ")
             wb = xlrd.open_workbook(path)
         except:
-            print("Zie je bestandje niet!")
+            print("Bestand niet gevonden")
 
     sheet=wb.sheet_by_index(0)
     my_dict={}
